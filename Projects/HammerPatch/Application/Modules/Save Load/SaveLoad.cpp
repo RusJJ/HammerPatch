@@ -54,7 +54,7 @@ namespace
 		{
 			Close();
 
-			Handle = fopen(path, mode);
+			fopen_s(&Handle, path, mode);
 			return Handle != nullptr;
 		}
 
@@ -586,7 +586,7 @@ namespace
 				{
 					SaveData.TextFilePtr->WriteText("\tface id: %d\n", faceid);
 
-					for (size_t i = 0; i < pointscount; i++)
+					for (int i = 0; i < pointscount; i++)
 					{
 						auto vec = pointsaddr[i];
 						SaveData.TextFilePtr->WriteText("\t\t[%g %g %g]\n", vec.X, vec.Y, vec.Z);

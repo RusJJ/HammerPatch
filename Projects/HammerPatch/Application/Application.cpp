@@ -198,7 +198,7 @@ HAP::BytePattern HAP::GetPatternFromString(const char* input)
 		if (std::isxdigit(*input))
 		{
 			entry.Unknown = false;
-			entry.Value = std::strtol(input, nullptr, 16);
+			entry.Value = (uint8_t)std::strtol(input, nullptr, 16);
 
 			input += 2;
 		}
