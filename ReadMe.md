@@ -51,4 +51,6 @@ The same map as saved and loaded by HammerPatch.
 
 
 ## Changes since crashfort's updates
-VS v142 support (library exists in, instead of dummy NuGet that didnt download include for me and also used old version)
+- VS v142 support (library exists in, instead of dummy NuGet that didnt download include for me and also used old version)
+
+- CSGO's Hammer shows more numbers of texture scaling (previously 0.250, now 0.25000)
